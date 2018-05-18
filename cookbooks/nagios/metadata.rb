@@ -1,6 +1,6 @@
 name 'nagios'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
+maintainer 'Adam McPartlan'
+maintainer_email 'adam.mcpartlan@nynet.co.uk'
 license 'All Rights Reserved'
 description 'Installs/Configures nagios'
 long_description 'Installs/Configures nagios'

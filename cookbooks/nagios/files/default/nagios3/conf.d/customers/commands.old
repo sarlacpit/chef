@@ -1,0 +1,292 @@
+###############################################################################
+# COMMANDS.CFG - SAMPLE COMMAND DEFINITIONS FOR NAGIOS 
+###############################################################################
+#
+#
+#define command{
+#        command_name    check_all_bgp
+#        command_line    /usr/lib/nagios/plugins/check_bgpstate '$HOSTADDRESS$' -C '$ARG1$'
+#}
+#
+#
+################################################################################
+# NOTIFICATION COMMANDS
+################################################################################
+
+
+# 'notify-host-by-email' command definition
+#define command{
+#	command_name	notify-host-by-email
+#	command_line	/usr/bin/printf "%b" "***** Nagios *****\n\nNotification Type: $NOTIFICATIONTYPE$\nHost: $HOSTNAME$\nState: $HOSTSTATE$\nAddress: $HOSTADDRESS$\nInfo: $HOSTOUTPUT$\n\nDate/Time: $LONGDATETIME$\n" | /usr/bin/mail -s "** NYnet ** $NOTIFICATIONTYPE$ Host Alert: $HOSTNAME$ is $HOSTSTATE$ **" $CONTACTEMAIL$
+#	}
+
+# 'notify-service-by-email' command definition
+#define command{
+#	command_name	notify-service-by-email
+#	command_line	/usr/bin/printf "%b" "***** Nagios *****\n\nNotification Type: $NOTIFICATIONTYPE$\n\nService: $SERVICEDESC$\nHost: $HOSTNAME$\nAddress: $HOSTADDRESS$\nState: $SERVICESTATE$\n\nDate/Time: $LONGDATETIME$\n\nAdditional Info:\n\n$SERVICEOUTPUT$\n" | /usr/bin/mail -s "** $NOTIFICATIONTYPE$ Service Alert: $HOSTNAME$/$SERVICEDESC$ is $SERVICESTATE$ **" $CONTACTEMAIL$
+#	}
+#
+#
+#
+#
+#
+################################################################################
+# HOST CHECK COMMANDS
+################################################################################
+
+# On Debian, check-host-alive is being defined from within the
+# nagios-plugins-basic package
+
+################################################################################
+# PERFORMANCE DATA COMMANDS
+################################################################################
+
+
+# 'process-host-perfdata' command definition
+#define command{
+#	command_name	process-host-perfdata
+#	command_line	/usr/bin/printf "%b" "$LASTHOSTCHECK$\t$HOSTNAME$\t$HOSTSTATE$\t$HOSTATTEMPT$\t$HOSTSTATETYPE$\t$HOSTEXECUTIONTIME$\t$HOSTOUTPUT$\t$HOSTPERFDATA$\n" >> /var/lib/nagios3/host-perfdata.out
+#	}
+#
+#
+## 'process-service-perfdata' command definition
+#define command{
+#	command_name	process-service-perfdata
+#	command_line	/usr/bin/printf "%b" "$LASTSERVICECHECK$\t$HOSTNAME$\t$SERVICEDESC$\t$SERVICESTATE$\t$SERVICEATTEMPT$\t$SERVICESTATETYPE$\t$SERVICEEXECUTIONTIME$\t$SERVICELATENCY$\t$SERVICEOUTPUT$\t$SERVICEPERFDATA$\n" >> /var/lib/nagios3/service-perfdata.out
+#	}
+#
+#
+#
+define command{
+        command_name    snmp_ups_capacity
+        command_line    $USER1$/check_snmp -H '$HOSTADDRESS$' -o '.1.3.6.1.4.1.318.1.1.1.2.2.1.0' -P '3' -L '$ARG1$' -U '$ARG2$' -a 'md5' -A '$ARG3$' -w !90: -c !60: -l '\Battery Charge\' -u '\%\'
+        }
+
+# 'snmp_ups_current' command definition
+###define command{
+#        command_name    snmp_ups_current
+#        command_line    $USER1$/check_snmp -H $HOSTADDRESS$ -C $ARG1$ -o .1.3.6.1.4.1.318.1.1.1.4.2.4.0 -w 6 -c 8 -l '\Output Current\' -u '\Amperes\'
+#        }
+
+define command{
+        command_name    snmp_ups_current
+        command_line    $USER1$/check_snmp -H '$HOSTADDRESS$' -o '.1.3.6.1.4.1.318.1.1.1.4.2.4.0' -P '3' -L '$ARG1$' -U '$ARG2$' -a 'md5' -A '$ARG3$'  -w 6 -c 8 -l '\Output Current\' -u '\Amperes\'
+        }
+
+# 'snmp_ups_frequency_in' command definition
+#define command{
+#        command_name    snmp_ups_frequency_in
+#        command_line    $USER1$/check_snmp -H $HOSTADDRESS$ -C $ARG1$ -o .1.3.6.1.4.1.318.1.1.1.3.2.4.0 -l '\Input Freq\' -u '\Hertz\' 
+#        }
+
+define command{
+        command_name    snmp_ups_frequency_in
+        command_line    $USER1$/check_snmp -H '$HOSTADDRESS$' -o '.1.3.6.1.4.1.318.1.1.1.3.2.4.0' -P '3' -L '$ARG1$' -U '$ARG2$' -a 'md5' -A '$ARG3$' -l '\Input Freq\' -u '\Hertz\'
+        }
+
+
+
+define command{
+        command_name    snmp_ups_frequency_out
+        command_line    $USER1$/check_snmp -H '$HOSTADDRESS$' -o '.1.3.6.1.4.1.318.1.1.1.4.2.2.0' -P '3' -L '$ARG1$' -U '$ARG2$' -a 'md5' -A '$ARG3$' -l '\Output Freq\' -u '\Hertz\'
+        }
+
+define command{
+        command_name    snmp_ups_lasttest_date
+        command_line    $USER1$/check_snmp -H '$HOSTADDRESS$' -o .1.3.6.1.4.1.318.1.1.1.7.2.4.0 -P '3' -L '$ARG1$' -U '$ARG2$' -a 'md5' -A '$ARG3$' -l '\Last Test Date\'
+        }
+define command{
+        command_name    snmp_ups_lasttest_result
+        command_line    $USER1$/check_snmp -H '$HOSTADDRESS$' -o '.1.3.6.1.4.1.318.1.1.1.7.2.3.0' -P '3' -L '$ARG1$' -U '$ARG2$' -a 'md5' -A '$ARG3$' -c 2 -l '\1=Pass 2=Fail\'
+        }
+
+
+
+define command{
+        command_name    snmp_ups_load
+        command_line    $USER1$/check_snmp -H '$HOSTADDRESS$' -o '.1.3.6.1.4.1.318.1.1.1.4.2.3.0' -P '3' -L '$ARG1$' -U '$ARG2$' -a 'md5' -A '$ARG3$' -w 85 -c 90 -l '\Current Load\' -u '\%\'
+        }
+
+
+define command{
+       command_name    snmp_ups_runtime
+       command_line    $USER1$/check_snmp -H '$HOSTADDRESS$' -o '.1.3.6.1.4.1.318.1.1.1.2.2.3.0' -P '3' -L '$ARG1$' -U '$ARG2$' -a 'md5' -A '$ARG3$' -c 90000: -w 180000: -l '\RunTime (Timeticks - 90000 = 15Mins - 180000 = 30mins)\' 
+       }
+
+define command{
+       command_name    snmp_ups_runtime_hot
+       command_line    $USER1$/check_snmp -H '$HOSTADDRESS$' -o '.1.3.6.1.4.1.318.1.1.1.2.2.3.0' -P '3' -L '$ARG1$' -U '$ARG2$' -a 'md5' -A '$ARG3$' -c 90000: -w 120000: -l '\RunTime (Timeticks - 90000 = 15Mins - 120000 = 20mins)\' 
+       }
+
+
+define command{
+       command_name    snmp_ups_stat
+       command_line    $USER1$/check_snmp -H '$HOSTADDRESS$' -o '.1.3.6.1.4.1.318.1.1.1.2.1.1.0' -P '3' -L '$ARG1$' -U '$ARG2$' -a 'md5' -A '$ARG3$' -w 3 -c 4 -l '\Main UPS Status\'
+       }
+
+define command{
+        command_name    snmp_ups_temp
+        command_line    $USER1$/check_snmp -H '$HOSTADDRESS$' -o '.1.3.6.1.4.1.318.1.1.1.2.2.2.0' -P '3' -L '$ARG1$' -U '$ARG2$' -a 'md5' -A '$ARG3$' -w 46 -c 50 -l '\Internal Temp\' -u '\Celsius\'
+        }
+
+
+define command{
+        command_name    snmp_ups_voltage_in
+        command_line    $USER1$/check_snmp -H '$HOSTADDRESS$' -o '.1.3.6.1.4.1.318.1.1.1.3.2.1.0' -P '3' -L '$ARG1$' -U '$ARG2$' -a 'md5' -A '$ARG3$' -l '\Input Voltage\' -u '\Volts\'
+        }
+
+
+define command{
+        command_name    snmp_ups_voltage_out
+        command_line    $USER1$/check_snmp -H '$HOSTADDRESS$' -o '.1.3.6.1.4.1.318.1.1.1.4.2.1.0' -P '3' -L '$ARG1$' -U '$ARG2$' -a 'md5' -A '$ARG3$' -l '\Output Voltage\' -u '\Volts\'
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 'snmp_ups_capacity' command definition
+#define command{
+#        command_name    snmp_ups_capacity
+#        command_line    $USER1$/check_snmp -H $HOSTADDRESS$ -C $ARG1$ -o .1.3.6.1.4.1.318.1.1.1.2.2.1.0 -w !90: -c !60: -l '\Battery Charge\' -u '\%\' 
+#        }
+#
+# 'snmp_ups_current' command definition
+#define command{
+#        command_name    snmp_ups_current
+#        command_line    $USER1$/check_snmp -H $HOSTADDRESS$ -C $ARG1$ -o .1.3.6.1.4.1.318.1.1.1.4.2.4.0 -w 6 -c 8 -l '\Output Current\' -u '\Amperes\'
+#        }
+#
+## 'snmp_ups_frequency_in' command definition
+#define command{
+#        command_name    snmp_ups_frequency_in
+#        command_line    $USER1$/check_snmp -H $HOSTADDRESS$ -C $ARG1$ -o .1.3.6.1.4.1.318.1.1.1.3.2.4.0 -l '\Input Freq\' -u '\Hertz\' 
+#        }
+#
+## 'snmp_ups_frequency_out' command definition
+#define command{
+#        command_name    snmp_ups_frequency_out
+#        command_line    $USER1$/check_snmp -H $HOSTADDRESS$ -C $ARG1$ -o .1.3.6.1.4.1.318.1.1.1.4.2.2.0 -l '\Output Freq\' -u '\Hertz\' 
+#        }
+#
+## 'snmp_ups_lasttest_date' command definition
+#define command{
+#        command_name    snmp_ups_lasttest_date
+#        command_line    $USER1$/check_snmp -H $HOSTADDRESS$ -C $ARG1$ -o .1.3.6.1.4.1.318.1.1.1.7.2.4.0 -l '\Last Test Date\'
+#        }
+#
+## 'snmp_ups_lasttest_result' command definition
+#define command{
+#        command_name    snmp_ups_lasttest_result
+#        command_line    $USER1$/check_snmp -H $HOSTADDRESS$ -C $ARG1$ -o .1.3.6.1.4.1.318.1.1.1.7.2.3.0 -c 2 -l '\1=Pass 2=Fail\'
+#        }
+#
+## 'snmp_ups_load' command definition
+#define command{
+#        command_name    snmp_ups_load
+#        command_line    $USER1$/check_snmp -H $HOSTADDRESS$ -C $ARG1$ -o .1.3.6.1.4.1.318.1.1.1.4.2.3.0 -w 85 -c 90 -l '\Current Load\' -u '\%\' 
+#        }
+#
+## 'snmp_ups_runtime' command definition
+#define command{
+#       command_name    snmp_ups_runtime
+#       command_line    $USER1$/check_snmp -H $HOSTADDRESS$ -C $ARG1$ -o .1.3.6.1.4.1.318.1.1.1.2.2.3.0 -c 90000: -w 180000: -l '\RunTime (Timeticks - 90000 = 15Mins - 180000 = 30mins)\' 
+#       }
+#
+## 'snmp_ups_runtime' command definition
+#define command{
+#       command_name    snmp_ups_runtime_hot
+#       command_line    $USER1$/check_snmp -H $HOSTADDRESS$ -C $ARG1$ -o .1.3.6.1.4.1.318.1.1.1.2.2.3.0 -c 90000: -w 120000: -l '\RunTime (Timeticks - 90000 = 15Mins - 120000 = 20mins)\' 
+#       }
+#
+#
+## 'snmp_ups_stat' command definition
+#define command{
+#       command_name    snmp_ups_stat
+#       command_line    $USER1$/check_snmp -H $HOSTADDRESS$ -C $ARG1$ -o .1.3.6.1.4.1.318.1.1.1.2.1.1.0 -w 3 -c 4 -l '\Main UPS Status\' 
+#       }
+#
+## 'snmp_ups_temp' command definition
+#define command{
+#        command_name    snmp_ups_temp
+#        command_line    $USER1$/check_snmp -H $HOSTADDRESS$ -C $ARG1$ -o .1.3.6.1.4.1.318.1.1.1.2.2.2.0 -w 46 -c 50 -l '\Internal Temp\' -u '\Celsius\' 
+#        }
+## 'snmp_ups_voltage_in' command definition
+#define command{
+#        command_name    snmp_ups_voltage_in
+#        command_line    $USER1$/check_snmp -H $HOSTADDRESS$ -C $ARG1$ -o .1.3.6.1.4.1.318.1.1.1.3.2.1.0 -l '\Input Voltage\' -u '\Volts\' 
+#        }
+#
+## 'snmp_ups_voltage_out' command definition
+#define command{
+#        command_name    snmp_ups_voltage_out
+#        command_line    $USER1$/check_snmp -H $HOSTADDRESS$ -C $ARG1$ -o .1.3.6.1.4.1.318.1.1.1.4.2.1.0 -l '\Output Voltage\' -u '\Volts\' 
+#        }
+#
+## 'snmp_upssw_active_input' command definition
+#define command{
+#	command_name	snmp_upssw_active_input
+#	command_line	$USER1$/check_snmp -H $HOSTADDRESS$ -C $ARG1$ -o .1.3.6.1.4.1.318.1.1.8.5.1.2.0 -w 2:2 -l '\MAINS FEED=1 -- UPS FEED=2 --- ACTIVE FEED=\'
+#        }
+
+#define command{
+#        command_name    snmp_upssw_redundancy
+#        command_line    $USER1$/check_snmp -H $HOSTADDRESS$ -C $ARG1$ -o .1.3.6.1.4.1.318.1.1.8.5.1.3.0 -w 2:2 -l '\REDUNDANCY LOST=1 -- FULLY REDUNDANT=2 --- REDUNDANCY STATUS=\'
+#        }
+#
+#define command{
+#        command_name    snmp_upssw_load
+#        command_line    $USER1$/check_snmp -H $HOSTADDRESS$ -C $ARG1$ -o .1.3.6.1.4.1.318.1.1.8.5.4.3.1.10.1.1.1 -w 60 -c 90 -l '\Current Load\' -u '\%\'
+#        }
+#
+#define command{
+#        command_name    snmp_upssw_current
+#        command_line    $USER1$/check_snmp -H $HOSTADDRESS$ -C $ARG1$ -o .1.3.6.1.4.1.318.1.1.8.5.4.3.1.4.1.1.1 -w 60 -c 80 -l '\Output Current (DIVIDE BY 10!)\' -u '\Amperes\'
+#        }
+#
+#define command{
+#        command_name    snmp_upssw_frequency_in_mains
+#        command_line    $USER1$/check_snmp -H $HOSTADDRESS$ -C $ARG1$ -o .1.3.6.1.4.1.318.1.1.8.5.3.2.1.4.1 -l '\Input Freq MAINS\' -u '\Hertz\'
+#        }
+#
+#define command{
+#        command_name    snmp_upssw_frequency_in_ups
+#        command_line    $USER1$/check_snmp -H $HOSTADDRESS$ -C $ARG1$ -o .1.3.6.1.4.1.318.1.1.8.5.3.2.1.4.2 -l '\Input Freq UPS\' -u '\Hertz\'
+#        }
+#
+#define command{
+#        command_name    snmp_upssw_frequency_out
+#        command_line    $USER1$/check_snmp -H $HOSTADDRESS$ -C $ARG1$ -o .1.3.6.1.4.1.318.1.1.8.5.4.2.1.4.1 -l '\Output Freq\' -u '\Hertz\'
+#        }
+#
+#define command{
+#        command_name    snmp_upssw_voltage_in_mains
+#        command_line    $USER1$/check_snmp -H $HOSTADDRESS$ -C $ARG1$ -o .1.3.6.1.4.1.318.1.1.8.5.3.3.1.3.1.1.1 -l '\Input Voltage MAINS\' -u '\Volts\'
+#        }
+#
+#define command{
+#        command_name    snmp_upssw_voltage_in_ups
+#        command_line    $USER1$/check_snmp -H $HOSTADDRESS$ -C $ARG1$ -o .1.3.6.1.4.1.318.1.1.8.5.3.3.1.3.2.1.1 -l '\Input Voltage UPS\' -u '\Volts\'
+#        }
+#
+#define command{
+#        command_name    snmp_upssw_voltage_out
+#        command_line    $USER1$/check_snmp -H $HOSTADDRESS$ -C $ARG1$ -o .1.3.6.1.4.1.318.1.1.8.5.4.3.1.3.1.1.1 -l '\Output Voltage\' -u '\Volts\'
+#        }
+##########

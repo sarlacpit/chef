@@ -16,6 +16,11 @@
 #/etc/pam.d/sudo
 #/etc/audisp/plugins.d/syslog.conf
 
+execute 'apt update' do
+  command 'apt update'
+end
+
+
 ########################################################
 # Postfix
 

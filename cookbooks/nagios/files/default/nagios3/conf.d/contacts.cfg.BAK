@@ -1,0 +1,120 @@
+################################################################################
+# contacts.cfg
+###############################################################################
+###
+
+
+###############################################################################
+###############################################################################
+#
+# CONTACTS
+#
+###############################################################################
+###############################################################################
+
+# In this simple config file, a single contact will receive all alerts.
+
+define contact{
+        contact_name                    support
+        alias                           zendesk
+        service_notification_period     24x7
+        host_notification_period        24x7
+        service_notification_options    w,u,c,r
+        host_notification_options       d,r
+        service_notification_commands   notify-service-by-email
+        host_notification_commands      notify-host-by-email
+#        email                           root@localhost
+        email                           support@nynet.zendesk.com     ;
+        }
+
+define contact{
+        contact_name                    adam
+        alias                           adam
+        service_notification_period     24x7
+        host_notification_period        24x7
+        service_notification_options    w,u,c,r
+        host_notification_options       d,r
+        service_notification_commands   notify-service-by-email
+        host_notification_commands      notify-host-by-email
+#        email                           root@localhost
+        email                           adam.mcpartlan@nynet.co.uk     ;
+        }
+
+
+define contact{
+        contact_name                    logicallis
+        alias                           logicallis
+#        service_notification_period     workhours
+#        host_notification_period       workhours
+        service_notification_period     nonworkhours 
+        host_notification_period        nonworkhours
+#        service_notification_period     24x7
+#        host_notification_period        24x7
+        service_notification_options    w,u,c
+        host_notification_options       d,u
+        service_notification_commands   notify-service-by-email
+        host_notification_commands      notify-host-by-email
+#        email                           root@localhost
+        email                           msc@uk.logicalis.com     ;
+        #email                           mcparty@gmail.com
+        }
+
+
+#define contact{
+#        contact_name                    chris
+#        alias                           chris
+#        service_notification_period     24x7
+#        host_notification_period        24x7
+#        service_notification_options    w,u,c,r
+#        host_notification_options       d,r
+#        service_notification_commands   notify-service-by-email
+#        host_notification_commands      notify-host-by-email
+#        email                           chris.cox@nynet.co.uk     ;
+#        }
+#
+define contact{
+        contact_name                    ted
+        alias                           ted
+        service_notification_period     never
+        host_notification_period        never 
+        service_notification_options    w,u,c,r
+        host_notification_options       d,r
+        service_notification_commands   notify-service-by-email
+        host_notification_commands      notify-host-by-email
+        email                           ted@nynet.co.uk     ;
+        }
+
+
+
+###############################################################################
+###############################################################################
+#
+# CONTACT GROUPS
+#
+###############################################################################
+###############################################################################
+
+# We only have one contact in this simple configuration file, so there is
+# no need to create more than one contact group.
+
+define contactgroup{
+        contactgroup_name       admins
+        alias                   networks
+        members                 support,adam
+}
+
+define contactgroup{
+	contactgroup_name	oohcontacts
+	alias			ooh
+	members			logicallis
+}
+
+
+define contactgroup{
+       contactgroup_name      bogus
+       alias                  bogus escalation
+       members                ted
+}
+
+
+

@@ -1,0 +1,2520 @@
+define host {
+
+        use             standard
+        host_name       DFES4041_Eskdale School and Radio to DFES3050
+        alias           nycc-r-dfes4041-01
+        address         100.65.108.16
+        hostgroups      School-Direct-F, whitby, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+       use             standard
+       host_name       DFES3331 Terrington C of E
+       alias           nycc-r-dfes3331-01
+       address         100.65.126.22
+       hostgroups      School-Direct-N, SCHOOLS, malton, standard, customer-nodes
+       notification_options            d,r
+       max_check_attempts              2
+}
+
+define host {
+       use             standard
+       host_name       DFES3249 - Kirkby Malzeard PS
+       alias           nycc-r-dfes3249-01
+       address         127.0.0.1
+       hostgroups      SCHOOLS, CEASED
+       notification_options            d,r
+       max_check_attempts              2
+}
+
+define host {
+       use             standard
+       host_name       DFES2161 - Braeburn Junior School
+       alias           nycc-r-dfes2161-01
+       address         127.0.0.1
+       hostgroups      SCHOOLS, CEASED
+       notification_options            d,r
+       max_check_attempts              2
+}
+
+define host {
+       use             standard
+       host_name       DFES2350 - Scotton Lingerfield PS
+       alias           nycc-r-dfes2350-01
+       address         100.65.144.40
+       hostgroups      School-Direct-F, knaresborough, customer-nodes, SCHOOLS, standard
+       notification_options            d,r
+       max_check_attempts              2
+}
+
+define host {
+       use             standard
+       host_name       DFES3263_Holy_Trinity_CE_Jun_S
+       alias           nycc-r-dfes3263-01
+       address         100.65.130.14
+       hostgroups      School-Direct-N, thirsk, customer-nodes, SCHOOLS, standard
+       notification_options            d,r
+       max_check_attempts              2
+}
+
+
+define host {
+
+	use		standard
+	host_name	DFES2042_Lealholm_Primary_School
+	alias		nycc-r-lealholmps-01
+	address		100.65.108.39
+	hostgroups	School-Direct-N, whitby, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES2117_Gladstone_Road_Infant_School
+	alias		nycc-r-dfes2117-01
+	address		127.0.0.1
+	hostgroups	School-Direct-N, scarborough, customer-nodes, SCHOOLS, standard, CEASED
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES2206_Wheatcroft_C_P_S
+	alias		nycc-r-dfes2206-01
+	address		100.65.104.11
+	hostgroups	School-Direct-N, scarborough, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES2233_Lindhead_S
+	alias		nycc-r-dfes2233-01
+	address		100.65.104.8
+	hostgroups	School-Direct-N, scarborough, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+
+define host {
+
+	use		standard
+	host_name	DFES2328_Bilton_Grange_Community_Primary_School
+	alias		nycc-r-dfes2328-01
+	address		100.65.98.4
+	hostgroups	School-Direct-N, harrogate, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES2357_South_Milford_CPS
+	alias		nycc-r-smilfordps-01
+	address		100.65.118.9
+	hostgroups	School-Direct-N, garforth, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES2365_Greatwood_CPS
+	alias		nycc-r-dfes2365-01
+	address		100.65.100.4
+	hostgroups	School-Direct-N, skipton, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES2380_Hungate_CPS
+	alias		nycc-r-hungatecps-01
+	address		100.65.118.3
+	hostgroups	School-Direct-N, garforth, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES2381_Thorpe_Willoughby_C_P_S
+	alias		nycc-r-dfes2381-01
+	address		100.65.116.6
+	hostgroups	School-Direct-N, selby, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES3034_Eppleby_Forcett_CE_PS
+	alias		nycc-r-dfes3034-01
+	address		127.0.0.1
+	hostgroups	School-Direct-N, darlington, customer-nodes, SCHOOLS, standard, CEASED 
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+
+define host {
+
+	use		standard
+	host_name	DFES3257_Monk_Frystone_PS
+	alias		nycc-r-dfes3257-01
+	address		100.65.118.4
+	hostgroups	School-Direct-N, garforth, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES4005_Easingwold_school
+	alias		nycc-r-dfes4005-01
+	address		100.65.106.2
+	hostgroups	School-Direct-F, easingwold, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES4047_Stokesley_School + NY1055 Stokesley Youth Centre
+	alias		nycc-r-dfes4047-01
+	address		100.65.136.2
+	hostgroups	School-Direct-F, stokesley, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES4054_Lady_Lumleys_and_NY152_Ryedale_ALS_and_CISP_Quiet_PC 
+	alias		nycc-r-ladylumleys-01
+	address		100.65.122.2
+	hostgroups	School-Direct-F, pickering, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES4070_Graham_School
+	alias		nycc-r-dfes4070-01
+	address		100.65.104.9
+	hostgroups	School-Direct-F, scarborough, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES4076a_Richmond_Upper_School + NY131 Richmond for Youth 
+	alias		nycc-r-richmondupper-01
+	address		100.65.102.2
+	hostgroups	School-Direct-F, richmond, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES4152_Norton_College
+	alias		nycc-r-nortoncollege-01
+	address		100.65.126.2
+	hostgroups	School-Direct-F, malton, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES4205 Settle High School and College + NY1010 CYP Settle Youth
+	alias		nycc-r-dfes4205-01
+	address		100.65.134.2
+	hostgroups	School-Direct-F, settle, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES4210_2_South_Craven_School
+	alias		 nycc-r-southcraven-01
+	address		100.65.100.2
+	hostgroups	School-Direct-F, skipton, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES4211_Tadcaster_Grammar_School
+	alias		nycc-r-tadcastergrammar-01
+	address		100.65.124.2
+	hostgroups	School-Direct-F, tadcaster, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES4604_St_Augustines_School
+	alias		nycc-r-staugustines-01
+	address		100.65.104.3
+	hostgroups	School-Direct-F, scarborough, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES7027_Brooklands_School
+	alias		nycc-r-dfes7027-01
+	address		100.65.100.3
+	hostgroups	School-Direct-N, skipton, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+
+define host {
+
+        use             standard 
+        host_name       DFES2383 Coppice Valley CPS
+        alias           nycc-r-dfes2383-01
+        address         100.65.98.7
+        hostgroups      School-Direct-N, harrogate, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES4075 Wensleydale School
+        alias           nycc-r-dfes4075-01
+        address         100.65.120.2
+        hostgroups      School-Direct-F, leyburn, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES4039 Whitby Community College
+        alias           nycc-r-dfes4039-01
+        address         100.65.108.3
+        hostgroups      School-Direct-F, whitby, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES2318 Drax CPS
+        alias           nycc-r-dfes2318-01
+        address         100.65.114.8
+        hostgroups      School-Direct-N, snaith, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES3253_Kirk_Smeaton_CE_VC_PS
+	alias		nycc-r-dfes3253-01
+	address		100.65.128.6
+	hostgroups	School-Direct-N, pontefract, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES7017_Springhead_School
+	alias		nycc-r-dfes7017-01
+	address		100.65.104.15
+	hostgroups	School-Direct-C, scarborough, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES3326_St_Martins_CE_VA_PS
+	alias		nycc-r-dfes3326-01
+	address		127.0.0.1
+	hostgroups	School-Direct-N, CEASED, scarborough, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES7009_Woodlands_Academy
+	alias		nycc-r-dfes7009-01
+	address		100.65.104.13
+	hostgroups	School-Direct-N, scarborough, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES3068_Knayton_CE_VC_PS
+	alias		nycc-r-dfes3068-01
+	address		100.65.130.10
+	hostgroups	School-Direct-N, thirsk, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES2224 Cayton PS
+        alias           nycc-r-dfes2224-01
+        address         100.65.104.10
+        hostgroups      School-Direct-N, scarborough, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES3042_Marwood_CE_VC_IS
+	alias		nycc-r-dfes3042-01
+	address		100.65.140.13
+	hostgroups	School-Direct-N, middlesbrough, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES4077_Malton_School
+	alias		nycc-r-dfes4077-01
+	address		100.65.126.3
+	hostgroups	School-Direct-F, malton, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+define host {
+
+	use		standard
+	host_name	DFES3247 St_Peters_CE_P_S
+	alias		nycc-r-dfes3247-01
+	address		100.65.98.15
+	hostgroups	School-Direct-C, harrogate, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES3378_St_Josephs_Catholic
+	alias		nycc-r-dfes3378-01
+	address		100.65.98.14
+	hostgroups	School-Direct-N, harrogate, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES3615_St._Peters_RC_P_S
+	alias		nycc-r-dfes3615-01
+	address		100.65.104.22
+	hostgroups	School-Direct-N, scarborough, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+
+define host {
+
+	use		standard
+	host_name	DFES2076_Newby_and_Scalby_Primary_School
+	alias		nycc-r-dfes2076-01
+	address		100.65.104.23
+	hostgroups	School-Direct-N, scarborough, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+
+define host {
+
+	use		standard
+	host_name	DFES2109 Barrowcliff Junior Sch
+	alias		nycc-r-dfes2109-01
+	address		100.65.104.24
+	hostgroups	School-Direct-N, scarborough, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES2249_Brompton_CPS
+	alias		nycc-r-dfes2249-01
+	address		100.65.110.10
+	hostgroups	School-Direct-N, northallerton, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+
+
+
+define host {
+
+	use		standard
+	host_name	DFES3000 Ainderby Steeple CE PS
+	alias		nycc-r-dfes3000-01
+	address		100.65.110.12
+	hostgroups	School-Direct-N, northallerton, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES2063 Hunton and Arrathorne CPS
+	alias		nycc-r-dfes2063-01
+	address		100.65.120.44
+	hostgroups	School-Direct-N, leyburn, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES3088 Pickhill CE PS
+	alias		nycc-r-dfes3088-01
+	address		100.65.7.150
+	hostgroups	School-Indirect-aDSL, birstall-dc, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES1001_Childhaven_Nursery_School + NY1016 CYPS Falsgrave CC
+	alias		nycc-r-dfes1001-01
+	address		100.65.104.16
+	hostgroups	School-Direct-C, scarborough, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES3069 Lythe CE VC PS
+	alias		nycc-r-dfes3069-01
+	address		100.65.108.40
+	hostgroups	School-Direct-N, whitby, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+
+define host {
+
+        use             standard
+        host_name       DFES3271 Sharow CE PS
+        alias           nycc-r-dfes3271-01
+        address         100.65.130.5
+        hostgroups      School-Direct-N, thirsk, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES3351 The Boyle and Petyt PS
+	alias		nycc-r-dfes3351-01
+	address		100.65.100.74
+	hostgroups	School-Direct-N, skipton, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES2133_Snape_C_P_S
+	alias		nycc-r-dfes2133-01
+	address		100.65.110.70
+	hostgroups	School-Direct-N, northallerton, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+                use                         standard
+                host_name         DFES2252_Carlton_Miniott_CPS
+                alias                       nycc-r-dfes2252-01
+                address                                100.65.130.12
+                hostgroups         School-Direct-N, thirsk, customer-nodes, SCHOOLS, standard
+                notification_options                       d,r
+                max_check_attempts                    2
+}
+
+define host {
+
+                use                         standard
+                host_name         DFES2112_Braeburn_Infant_and_Nursery_School + NY1113 Adult Learning
+                alias                       nycc-r-dfes2112-01
+                address                                100.65.104.41
+                hostgroups         School-Direct-N, scarborough, customer-nodes, SCHOOLS, standard
+                notification_options                       d,r
+                max_check_attempts                    2
+}
+
+define host {
+
+                use               standard
+                host_name         DFES2387_Camblesforth_Community_Primary_School
+                alias             nycc-r-dfes2387-01
+                address           100.65.114.7
+                hostgroups        School-Direct-N, snaith, customer-nodes, SCHOOLS, standard
+                notification_options                       d,r
+                max_check_attempts                    2
+}
+
+define host {
+
+	       use		standard
+               host_name	DFES2154_East_Whitby_PS + NY1039 Childrens Centre
+               alias		nycc-r-dfes2154-01
+               address		100.65.108.9
+	       hostgroups	School-Direct-N, whitby, customer-nodes, SCHOOLS, standard
+	       notification_options		d,r
+	       max_check_attempts		2
+}
+
+
+define host {
+
+        use             standard
+        host_name       DFES3274 Skipton Parish PS + NY1049 Skipton CC
+        alias           nycc-r-dfes3274-01
+        address         100.65.100.14
+        hostgroups      School-Direct-N, skipton, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES2163_Mill_Hill_CPS
+	alias		nycc-r-dfes2163-01
+	address		127.0.0.1
+	hostgroups	School-Direct-N, northallerton, customer-nodes, CEASED, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES2425_Saltergate_Infants + NY1035 Hgt North Childrens Centre
+	alias		nycc-r-dfes2425-01
+	address		100.65.98.19
+	hostgroups	School-Direct-N, harrogate, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES3236_Embsay_CE_VC_PS
+	alias		nycc-r-dfes3236-01
+	address		100.65.100.13
+	hostgroups	School-Direct-N, skipton, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES3308_Egton_CE_VA_PS
+	alias		nycc-r-dfes3308-01
+	address		100.65.7.190
+	hostgroups	School-Indirect-aDSL, birstall-dc, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+
+define host {
+
+        use             standard
+        host_name       DFES3308b Egton CE VA PS
+        alias           nycc-r-dfes3308-02
+        address         100.65.7.18
+        hostgroups      School-Indirect-aDSL, birstall-dc, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+
+
+define host {
+
+	use		standard
+	host_name	DFES3365_Rathmell_CE_VA_PS
+	alias		nycc-r-dfes3365-01
+	address		100.65.7.182
+	hostgroups	School-Indirect-aDSL, birstall-dc, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES3373_St_Marys_RC_PS
+	alias		nycc-r-dfes3373-01
+	address		100.65.116.11
+	hostgroups	School-Direct-N, selby, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES4073_Scalby_School
+	alias		nycc-r-dfes4073-01
+	address		100.65.104.44
+	hostgroups	School-Direct-F, scarborough, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+
+define host {
+
+        use             standard
+        host_name       DFES2056 Hawes CPS
+        alias           nycc-r-dfes2056-01
+        address         100.65.120.46
+        hostgroups      School-Direct-N, leyburn, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+
+define host {
+
+        use             standard
+        host_name       DFES2257 East Ayton PS 
+        alias           nycc-r-dfes2257-01
+        address         100.65.10.246
+        hostgroups      School-Indirect-aDSL, birstall-dc, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES3266 Fountains CE PS
+        alias           nycc-r-dfes3266-01
+        address         100.65.7.22
+        hostgroups      School-Acc-aDSL, birstall-dc, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES3266B Fountains CE PS 2
+        alias           nycc-r-dfes3266b-01
+        address         100.65.7.38
+        hostgroups      School-Acc-aDSL, birstall-dc, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+
+define host {
+
+	use		standard
+	host_name	DFES3352_Burnsall_VA_PS
+	alias		nycc-r-dfes3352-01
+	address		100.65.7.154
+	hostgroups	School-Indirect-aDSL, birstall-dc, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES4610_Holy_Family_RC_High_School
+	alias		nycc-r-dfes4610-01
+	address		100.65.114.4
+	hostgroups	School-Direct-F, snaith, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES2356_Water_Street_CPS
+	alias		nycc-r-dfes2356-01
+	address		100.65.100.18
+	hostgroups	School-Direct-N, skipton, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES2413_Filey_Junior_School
+	alias		nycc-r-dfes2413-01
+	address		127.0.0.1
+	hostgroups	School-Direct-N, CEASED, scarborough, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES3248_Killinghall_CE
+	alias		nycc-r-dfes3248-01
+	address		100.65.98.20
+	hostgroups	School-Direct-N, harrogate, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES2190_Airy_Hill_C_P_S
+	alias		nycc-r-dfes2190-01
+	address		100.65.108.11
+	hostgroups	School-Direct-C, whitby, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+
+define host {
+
+	use		standard
+	host_name	DFES3223_Barlow_CE_VC_PS
+	alias		nycc-r-dfes3223-01
+	address		100.65.114.5
+	hostgroups	School-Direct-N, snaith, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+
+define host {
+
+        use             standard
+        host_name       DFES2407 North_Duffield_CPS
+        alias           nycc-r-dfes2407-01
+        address         100.65.116.36
+        hostgroups      School-Direct-N, selby, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+
+define host {
+
+        use             standard
+        host_name       DFES2098 Rosedale Abbey 1
+        alias           DFES2098 Link1
+        address         100.65.7.42
+        hostgroups      School-Acc-aDSL, birstall-dc, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES2098 Rosedale Abbey 2
+        alias           DFES2098 Link2
+        address         100.65.7.46
+        hostgroups      School-Acc-aDSL, birstall-dc, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES2403_Hunmanby_PS
+        alias           nycc-r-dfes2403-01 
+        address         100.65.7.142  
+        hostgroups      School-Indirect-aDSL, birstall-dc, customer-nodes, SCHOOLS, standard 
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+
+define host {
+
+        use             standard
+        host_name       DFES3244 Hambleton CE VC PS
+        alias           nycc-r-dfes3244-01
+        address         100.65.116.20
+        hostgroups      School-Direct-N, selby, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES3273 Christ Church CoE VC PS
+	alias		nycc-r-dfes3273-01
+	address		100.65.100.20
+	hostgroups	School-Direct-N, skipton, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES2379 Brayton C Jnr sch
+	alias		nycc-r-dfes2379-01
+	address		100.65.116.21
+	hostgroups	School-Direct-N, selby, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES2393_Glusburn CPS + NY1050 South Craven CC 
+	alias		nycc-r-dfes2393-01
+	address		100.65.100.70
+	hostgroups	School-Direct-N, skipton, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES3154_Filey CE VC Infant and Nursery School + NY985 Filey CC
+	alias		nycc-r-dfes3154-01
+	address		100.65.104.50
+	hostgroups	School-Direct-N, scarborough, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES2197 West Cliff PS
+	alias		nycc-r-dfes2197-01
+	address		100.65.108.13
+	hostgroups	School-Direct-C, whitby, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+
+
+define host {
+
+	use		standard
+	host_name	DFES3356 Burnt Yates CE PS
+	alias		nycc-r-dfes3356-01
+	address		127.0.0.1
+	hostgroups	School-Direct-C, harrogate, birstwith, customer-nodes, SCHOOLS, standard, CEASED
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES3117 Thornton Dale CE PS
+	alias		nycc-r-dfes3117-01
+	address		100.65.122.6
+	hostgroups	School-Direct-N, pickering, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES3610 St Josephs RC PS
+	alias		nycc-r-dfes3610-01
+	address		127.0.0.1
+	hostgroups	School-Direct-N, pickering, customer-nodes, SCHOOLS, standard, CEASED
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES4224 Brayton College
+	alias		nycc-r-dfes4224-01
+	address		100.65.116.22
+	hostgroups	School-Direct-F, selby, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES2314 Carlton-in-Snaith Community PS
+	alias		nycc-r-dfes2314-01
+	address		100.65.114.3
+	hostgroups	School-Direct-N, snaith, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES2080 Applegarth P S
+	alias		nycc-r-dfes2080-01
+	address		100.65.110.14
+	hostgroups	School-Direct-N, northallerton, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES2212 Carnagill CPS + NY1042 Catterick Garr Childrens Centre
+	alias		nycc-r-dfes2212-01
+	address		100.65.120.8
+	hostgroups	School-Direct-N, leyburn, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+
+
+
+define host {
+
+	use		standard
+	host_name	DFES2170 Overdale CPS
+	alias		nycc-r-dfes2170-01
+	address		100.65.104.48
+	hostgroups	School-Direct-N, scarborough, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES3124 St Nicholas CE PS
+        alias           nycc-r-dfes3124-01
+        address         100.65.110.56
+        hostgroups      School-Direct-N, northallerton, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES2321 Kettlesing Felliscliffe CPS
+        alias           nycc-r-dfes2321-01
+        address         100.65.98.37
+        hostgroups      School-Direct-C, harrogate, birstwith, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+
+define host {
+
+	use		standard
+	host_name	DFES4035_Thirsk School + NY136 Thirsk Youth Centre
+	alias		nycc-r-dfes4035-01
+	address		100.65.130.19
+	hostgroups	School-Direct-F, thirsk, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES2183_Sowerby Community Primary School + NY1032 Childrens Centre
+	alias		nycc-r-dfes2183-01
+	address		100.65.130.18
+	hostgroups	School-Direct-N, thirsk, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES4004_Risedale Community College + NY003 Thirsk Caterers
+	alias		nycc-r-dfes4004-01
+	address		100.65.102.16
+	hostgroups	School-Direct-F, richmond, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES4200_Harrogate Grammar
+	alias		nycc-r-dfes4200-01
+	address		100.65.98.38
+	hostgroups	School-Direct-F, harrogate, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES4022_Ryedale School Kirkbymoorside
+	alias		nycc-r-dfes4022-01
+	address		100.65.122.7
+	hostgroups	School-Direct-F, pickering, kirkbymoorside, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES3225_St Cuthberts CE PS + NY1045 Nidderdale CC
+	alias		nycc-r-dfes3225-01
+	address		100.65.98.39
+	hostgroups	School-Direct-N, harrogate, pateley-bridge, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES2097_Romanby P S
+	alias		nycc-r-dfes2097-01
+	address		100.65.110.16
+	hostgroups	School-Direct-C, northallerton, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+
+
+define host {
+
+	use		standard
+	host_name	DFES2167_Colburn CPS
+	alias		nycc-r-dfes2167-01
+	address		100.65.120.12
+	hostgroups	School-Direct-N, leyburn, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+
+define host {
+
+	use		standard
+	host_name	DFES2333_Western P S
+	alias		nycc-r-dfes2333-01
+	address		100.65.98.41
+	hostgroups	School-Direct-C, harrogate, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+
+define host {
+
+        use             standard
+        host_name       DFES2317 Cowling CPS 
+        alias           nycc-r-dfes2317-01
+        address         100.65.100.66
+        hostgroups      School-Direct-N, skipton, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+
+
+define host {
+
+        use             standard
+        host_name       DFES2074 Malton CPS + NY029 CYPS Malton AI
+        alias           nycc-r-dfes2074-01
+        address         100.65.126.6
+        hostgroups      School-Direct-N, malton, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES2222_Pickering_C_Jnr._S
+        alias           nycc-r-dfes2222-01
+        address         100.65.122.8
+        hostgroups      School-Direct-N, pickering, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES3614_St_Marys_RCPS
+        alias           nycc-r-dfes3614-01
+        address         100.65.102.6
+        hostgroups      School-Direct-C, richmond, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+
+define host {
+
+        use             standard
+        host_name       DFES2116_Gladstone_Road_Junior_School
+        alias           nycc-r-dfes2116-01
+        address         100.65.104.67
+        hostgroups      School-Direct-C, scarborough, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+
+define host {
+
+        use             standard
+        host_name       DFES2065_Leyburn_CPS
+        alias           nycc-r-dfes2065-01
+        address         100.65.120.14
+        hostgroups      School-Direct-C, leyburn, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+
+define host {
+
+        use             standard
+        host_name       DFES4052_Bedale_High_School + NY133 Bedale Youth Music Service
+        alias           nycc-r-dfes4052-01
+        address         100.65.110.18
+        hostgroups      School-Direct-F, northallerton, bedale, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES2237_Thirsk_CPS + NY995 Thirsk CC
+        alias           nycc-r-dfes2237-01
+        address         100.65.130.20
+        hostgroups      School-Direct-N, thirsk, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES2120_Northstead_CPS
+        alias           nycc-r-dfes2120-01
+        address         100.65.104.72
+        hostgroups      School-Direct-N, scarborough, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES2247_Appleton_Wiske_CPS
+        alias           nycc-r-dfes2247-01
+        address         100.65.110.22
+        hostgroups      School-Direct-N, northallerton, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES3902_Sacred_Heart_Catholic_PS
+        alias           nycc-r-dfes3902-01
+        address         100.65.110.23
+        hostgroups      School-Direct-C, northallerton, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+
+define host {
+
+        use             standard
+        host_name       DFES2164_Easingwold_CPS + NY181 CYPS Easingwold
+        alias           nycc-r-dfes2164-01
+        address         100.65.106.4
+        hostgroups      School-Direct-N, easingwold, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES7029_Mowbray_School + Mowberry School AI
+        alias           nycc-r-dfes7029-01
+        address         100.65.110.24
+        hostgroups      School-Direct-N, northallerton, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+
+
+
+define host {
+
+        use             standard
+        host_name       DFES2391 Ingleton PS 
+        alias           nycc-r-dfes2391-01
+        address         100.65.146.3
+        hostgroups      School-Direct-N, kirkby-lonsdale, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES3278 Tockwith PS Xrio1
+        alias           nycc-r-dfes3278-xrio01
+        address         127.0.0.1
+        hostgroups      CEASED, School-Acc-aDSL, birstall-dc, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES2223 Seamer and Irton CPS
+        alias           nycc-r-dfes2223-01
+        address         127.0.0.1
+        hostgroups      School-Direct-N, scarborough, customer-nodes, SCHOOLS, standard, CEASED
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES3287 Kildwick Church of England PS
+        alias           nycc-r-dfes3287-01
+        address         100.65.100.54
+        hostgroups      School-Direct-N, skipton, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+
+define host {
+
+        use             standard
+        host_name       DFES2256 Castleton CPS
+        alias           nycc-r-dfes2256-01
+        address         100.65.140.11
+        hostgroups      School-Direct-N, middlesbrough, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+
+
+
+define host {
+
+        use             standard
+        host_name       DFES3319 Masham CE VA PS 
+        alias           nycc-r-dfes3319-01
+        address         100.65.110.54
+        hostgroups      School-Direct-N, northallerton, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+
+define host {
+
+	use		standard
+	host_name	DFES4069_Pindar School Secondary
+	alias		nycc-r-dfes4069-01
+	address		100.65.104.74
+	hostgroups	School-Direct-F, scarborough, cayton-bay, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES2401_Barlby_C_P_S
+	alias		nycc-r-dfes2401-01
+	address		100.65.116.19
+	hostgroups	School-Direct-C, selby, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES2424_Harrogate-Saltergate C Jnr S
+	alias		nycc-r-dfes2424-01
+	address		100.65.98.52
+	hostgroups	School-Direct-N, harrogate, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES2376_Oatlands C Jnr S
+	alias		nycc-r-dfes2376-01
+	address		100.65.98.53
+	hostgroups	School-Direct-C, harrogate, oatlands, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+
+define host {
+
+	use		standard
+	host_name	DFES4605_St Francis Xavier School
+	alias		nycc-r-dfes4605-01
+	address		100.65.102.8
+	hostgroups	School-Direct-F, richmond, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES2064_Kirkbymoorside C P S + NY130 CYPS Kirkby Moorside CC
+	alias		nycc-r-dfes2064-01
+	address		100.65.122.11
+	hostgroups	School-Direct-N, pickering, kirkbymoorside, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES2390 Barwick Parade C P S + NY1046 CYPS Selby South CC
+	alias		nycc-r-dfes2390-01
+	address		100.65.116.24
+	hostgroups	School-Direct-C, selby, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES2427_Riverside CPS
+	alias		nycc-r-dfes2427-01
+	address		100.65.124.4
+	hostgroups	School-Direct-N, tadcaster, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES4221_Boroughbridge High School + NY1067 BBridge4Youth
+	alias		nycc-r-dfes4221-01
+	address		100.65.138.14
+	hostgroups	School-Direct-F, ripon, boroughbridge, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES2188_Catterick Garrison-Wavell C Jnr S
+	alias		nycc-r-dfes2188-01
+	address		100.65.120.17
+	hostgroups	School-Direct-N, leyburn, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES3602_St Heddas RC PS
+	alias		nycc-r-dfes3602-01
+	address		100.65.108.41
+	hostgroups	School-Direct-N, whitby, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+
+define host {
+
+        use             standard
+        host_name       DFES2189_Catterick Garrison-Wavell C Inf S
+        alias           nycc-r-dfes2189-01
+        address         100.65.120.18
+        hostgroups      School-Direct-N, leyburn, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES2392_Tadcaster East C P S + NY2392 Tad East CC
+	alias		nycc-r-dfes2392-01
+	address		100.65.124.5
+	hostgroups	School-Direct-C, tadcaster, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES3307 Michael Sydall CS Pr Sch
+        alias           nycc-r-dfes3307-01
+        address         100.65.120.49
+        hostgroups      School-Direct-N, leyburn, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+
+
+
+
+
+define host {
+
+        use             standard
+        host_name       DFES3252_Kirk Hammerton Church of England Primary School
+        alias           nycc-r-dfes3252-01
+        address         100.65.98.56
+        hostgroups      School-Direct-C, harrogate, green-hammerton, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES3242_Green Hammerton CPS
+        alias           nycc-r-dfes3242-01
+        address         100.65.98.55
+        hostgroups      School-Direct-C, harrogate, green-hammerton, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES2246_Amotherby CPS
+	alias		nycc-r-dfes2246-01
+	address		100.65.126.10
+	hostgroups	School-Direct-C, malton, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES4608_Ermysteds Grammar School
+	alias		nycc-r-dfes4608-01
+	address		100.65.100.34
+	hostgroups	School-Direct-F, skipton, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+
+
+
+define host {
+
+	use		standard
+	host_name	DFES2351_Selby CPS + NY967 Selby North Childrens Centre
+	alias		nycc-r-dfes2351-01
+	address		100.65.116.35
+	hostgroups	School-Direct-N, selby, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+
+define host {
+
+	use		standard
+	host_name	DFES3291_South Otterington CE VC PS + CISP Clannet
+	alias		nycc-r-dfes3291-01
+	address		100.65.110.73
+	hostgroups	School-Direct-N, northallerton, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+
+define host {
+
+        use             standard
+        host_name       DFES2166_Leeming RAF CPS + CISP LNComms
+        alias           nycc-r-dfes2166-01
+        address         100.65.110.42
+        hostgroups      School-Direct-N, northallerton, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES2368_Hookstone Chase Community Primary School
+        alias           nycc-r-dfes2368-01
+        address         100.65.98.66
+        hostgroups      School-Direct-C, harrogate, starbeck, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES2236_Helmsley Community Primary School
+	alias		nycc-r-dfes2236-01
+	address		100.65.122.12
+	hostgroups	School-Direct-N, pickering, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+
+define host {
+
+	use		standard
+	host_name	DFES3270_Settle CE
+	alias		nycc-r-dfes3270-01
+	address		100.65.134.4
+	hostgroups	School-Direct-C, settle, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES2332_Starbeck C P S + NY1022 Starbeck Childrens Centre
+        alias           nycc-r-dfes2332-01
+        address         100.65.98.68
+        hostgroups      School-Direct-C, harrogate, starbeck, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES2372_Pannal Community PS + NY1043 Hgt South West CC
+        alias           nycc-r-dfes2372-01
+        address         100.65.98.67
+        hostgroups      School-Direct-F, harrogate, oatlands-mount, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES3119_Thornton Watlass CE
+        alias           nycc-r-dfes3119-01
+        address         100.65.110.45
+        hostgroups      School-Direct-C, northallerton, bedale, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES3289_Askrigg VC PS + CYPS Wensleydale CC
+        alias           nycc-r-dfes3289-01
+        address         100.65.120.69
+        hostgroups      School-Direct-N, leyburn, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES3010_Bedale CE PS
+        alias           nycc-r-dfes3010-01
+        address         100.65.110.44
+        hostgroups      School-Direct-C, northallerton, bedale, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES3113_Sutton-on-the-Forest
+	alias		nycc-r-dfes3113-01
+	address		100.65.106.13
+	hostgroups	School-Direct-N, easingwold, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+
+define host {
+
+        use             standard
+        host_name       DFES4611_St Aidans CE High School
+        alias           nycc-r-dfes4611-01
+        address         100.65.98.70
+        hostgroups      School-Direct-F, harrogate, starbeck, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES2173_Catterick Garrison + NY181 Le Cateau CPS
+        alias           nycc-r-dfes2173-01
+        address         100.65.120.21
+        hostgroups      School-Direct-N, leyburn, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+
+
+
+define host {
+
+        use             standard
+        host_name       DFES2331_Oatlands Inf School
+        alias           nycc-r-dfes2331-01
+        address         100.65.98.75
+        hostgroups      School-Direct-C, harrogate, oatlands-mount, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+
+define host {
+
+        use             standard
+        host_name       DFES3260_North Rigton CE PS
+        alias           nycc-r-dfes3260-01
+        address         100.65.10.22
+        hostgroups      School-Indirect-aDSL, birstall-dc, birstall-dc, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES3371_St Marys RC Primary
+	alias		nycc-r-dfes3371-01
+	address		100.65.144.5
+	hostgroups	School-Direct-C, knaresborough, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES3315_Kirkby and Great Broughton CE VC PS
+	alias		nycc-r-dfes3315-01
+	address		100.65.140.7
+	hostgroups	School-Direct-N, middlesbrough, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+
+define host {
+
+	use		standard
+	host_name	DFES3092_Richmond CE PS
+	alias		nycc-r-dfes3092-01
+	address		100.65.102.7
+	hostgroups	School-Direct-C, richmond, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+
+define host {
+
+	use		standard
+	host_name	DFES2421_Sherburn In Elmet - Athelstan C P S
+	alias		nycc-r-dfes2421-01
+	address		100.65.118.6
+	hostgroups	School-Direct-N, garforth, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES3268_Selby Abbey CE VC PS
+        alias           nycc-r-dfes3268-01
+        address         100.65.116.41
+        hostgroups      School-Direct-N, selby, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES3062_Kirby Hill CoE PS
+        alias           nycc-r-dfes3062-01
+        address         100.65.144.6
+        hostgroups      School-Direct-N, knaresborough, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+
+define host {
+
+        use             standard
+        host_name       DFES7004_Welburn Hall School
+        alias           nycc-r-dfes7004-01
+        address         100.65.122.18
+        hostgroups      School-Direct-C, pickering, kirkbymoorside, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES2389_Knaresborough Meadowside C P S
+        alias           nycc-r-dfes2389-01
+        address         100.65.144.12
+        hostgroups      School-Direct-N, knaresborough, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES3108_Snainton CE VC P S
+        alias           nycc-r-dfes3108-01
+        address         100.65.104.89
+        hostgroups      School-Direct-C, scarborough, snainton, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+
+define host {
+
+	use		standard
+	host_name	DFES2377_Knaresborough - Aspin Park CPS
+	alias		nycc-r-dfes2377-01
+	address		100.65.144.10
+	hostgroups	School-Direct-C, knaresborough, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES7022_The Forest School
+	alias		nycc-r-dfes7022-01
+	address		100.65.144.13
+	hostgroups	School-Direct-C, knaresborough, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+
+
+
+
+
+
+define host {
+
+        use             standard
+        host_name       DFES3275_Spofforth CE PS
+        alias           nycc-r-dfes3275-01
+        address         127.0.0.1
+        hostgroups      School-Indirect-aDSL, birstall-dc, CEASED, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+
+
+define host {
+
+	use		standard
+	host_name	DFES3240_Goldsborough School
+	alias		nycc-r-dfes3240-01
+	address		100.65.144.19
+	hostgroups	School-Direct-N, knaresborough, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+ #       use             standard
+  #      host_name       DFES2250_Brompton and Sawdon
+
+
+
+define host {
+
+        use             standard
+        host_name       DFES2359 Sutton in Craven CPS
+        alias           nycc-r-dfes2359-01
+        address         127.0.0.1
+        hostgroups      School-Direct-N, skipton, customer-nodes, SCHOOLS, standard, CEASED
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+
+
+define host {
+
+	use		standard
+	host_name	DFES2096_Reeth C P S
+	alias		nycc-r-dfes2096-01
+	address		100.65.120.34
+	hostgroups	School-Direct-N, leyburn, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES2150_Alanbrooke CPS + NY629 CYPS
+        alias           nycc-r-dfes2150-01
+        address         100.65.130.35
+        hostgroups      School-Direct-N, birstall-dc, birstall-dc, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+
+define host {
+
+	use		standard
+	host_name	DFES2139_Stokesley CP + NY1019 Childrens Centre
+	alias		nycc-r-dfes2139-01
+	address		127.0.0.1
+	hostgroups	School-Direct-N, middlesbrough, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+
+define host {
+
+	use		standard
+	host_name	DFES2217 Stakesby CPS + NY1001 West Whitby Childrens Centre
+	alias		nycc-r-dfes2217-01
+	address		100.65.108.21
+	hostgroups	School-Direct-N, whitby, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+
+
+
+
+
+define host {
+
+	use		standard
+	host_name	DFES2382_Rossett Acre P S + NY1044 Hgt South East CC
+	alias		nycc-r-dfes2382-01
+	address		100.65.98.84
+	hostgroups	School-Direct-N, harrogate, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES3155_Hertford Vale CE VC PS
+	alias		nycc-r-dfes3155-01
+	address		100.65.104.100
+	hostgroups	School-Direct-N, scarborough, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES2114_Friarage_CPS
+        alias           nycc-r-dfes2114-01
+        address         100.65.104.55
+        hostgroups      School-Direct-N, scarborough, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES3369 Barkston Ash PS
+        alias           nycc-r-dfes3369-01
+        address         100.65.124.14
+        hostgroups      School-Direct-N, tadcaster, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+
+
+define host {
+
+        use             standard
+        host_name       DFES7000_Brompton Hall School
+        alias           nycc-r-dfes7000-01
+        address         100.65.104.101
+        hostgroups      School-Direct-C, snainton, scarborough, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+
+
+
+
+define host {
+
+	use		standard
+	host_name	DFES4202_King James School
+	alias		nycc-r-dfes4202-01
+	address		100.65.144.20
+	hostgroups	School-Direct-F, knaresborough, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+
+
+define host {
+
+        use             standard
+        host_name       DFES2330_New Park CPS + NY1093 CYPS Hgt Music Service
+        alias           nycc-r-dfes2330-01
+        address         100.65.98.18
+        hostgroups      School-Direct-C, harrogate, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES2364_Willow Tree CPS
+        alias           nycc-r-dfes2364-01
+        address         100.65.98.47
+        hostgroups      School-Direct-C, harrogate, starbeck, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES2408_Norton CPS + NY996 Central Ryedale CC
+        alias           nycc-r-dfes2408-01
+        address         100.65.126.7
+        hostgroups      School-Direct-N, malton, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES2411 Rillington CPS
+        alias           nycc-r-dfes2411-1
+        address         100.65.126.24
+        hostgroups      School-Direct-N, selby, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+
+
+define host {
+
+	use		standard
+	host_name	DFES3109_South Kilvington CE VC P S
+	alias		nycc-r-dfes3109-01
+	address		100.65.130.21
+	hostgroups	School-Direct-C, thirsk, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES3110_Spennithorne CE PS
+	alias		nycc-r-dfes3110-01
+	address		100.65.120.22
+	hostgroups	School-Direct-C, leyburn, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+
+define host {
+
+        use             standard
+        host_name       DFES3227_Bishop Monkton CE PS
+        alias           nycc-r-dfes3227-01
+        address         100.65.98.100
+        hostgroups      School-Direct-N, harrogate, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+
+define host {
+
+        use             standard
+        host_name       DFES3368_Richard Taylor CE PS
+        alias           nycc-r-dfes3368-01
+        address         100.65.98.8
+        hostgroups      School-Direct-N, harrogate, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES3377_St Roberts Catholic PS
+	alias		nycc-r-dfes3377-01
+	address		100.65.98.50
+	hostgroups	School-Direct-N, harrogate, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES3903_St Johns CE Primary
+	alias		nycc-r-dfes3903-01
+	address		100.65.144.14
+	hostgroups	School-Direct-C, knaresborough, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+        use             premier
+        host_name       DFES5200_Nun Monkton Primary School + CISP Clannet
+        alias           nycc-r-dfes5200-01
+        address         100.65.98.83
+        hostgroups      School-Direct-F, harrogate, green-hammerton, customer-nodes, SCHOOLS, premier
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES4225_Selby HS - NY882
+	alias		nycc-r-dfes4225-01
+	address		100.65.116.42
+	hostgroups	School-Direct-F, selby, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES3282_Wistow Parochial
+        alias           nycc-r-dfes3282-01
+        address         100.65.116.3
+        hostgroups      School-Direct-N, selby, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES2410 Riccall PS 
+        alias           nycc-r-dfes2410-01
+        address         100.65.116.46
+        hostgroups      School-Direct-N, selby, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES3207 Gunnerside PS
+        alias           nycc-r-dfes3207-01
+        address         100.65.120.45
+        hostgroups      School-Direct-N, leyburn, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+	use		standard
+	host_name	DFES2426_Great Ayton - Roseberry CPS
+	alias		nycc-r-dfes2426-01
+	address		127.0.0.1
+	hostgroups	School-Direct-N, middlesbrough, customer-nodes, SCHOOLS, standard, CEASED
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+
+define host {
+
+        use             standard
+        host_name       DFES3210_Richmond Methodist PS
+        alias           nycc-r-dfes3210-01
+        address         100.65.120.66
+        hostgroups      School-Direct-N, leyburn, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+
+define host {
+
+        use             standard 
+        host_name       DFES3006_Arkengarthdale CPS
+        alias           nycc-r-dfes3006-01
+        address         88.210.173.137
+        hostgroups      School-Satellite, customer-nodes, SCHOOLS, standard
+        notification_options           d,r 
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES3600 St Benedicts
+        alias           nycc-r-dfes3600-01
+        address         100.65.126.25
+        hostgroups      School-Direct-N, malton, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+
+define host {
+
+	use		standard
+	host_name	DFES2242a Alverton CPS
+	alias		nycc-r-dfes2242-01
+	address		100.65.110.48
+	hostgroups	School-Direct-N, northallerton, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+
+define host {
+
+	use		standard
+	host_name	DFES3241_Grassington CE VC PS
+	alias		nycc-r-dfes3241-01
+	address		100.65.100.51
+	hostgroups	School-Direct-N, skipton, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES4206_Upper Wharfdale School
+        alias           nycc-r-dfes4206-01
+        address         100.65.100.49
+        hostgroups      School-Direct-F, skipton, grassington, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             premier
+        host_name       DFES4232_Barlby High School + CISP LNComms
+        alias           nycc-r-dfes4232-01
+        address         100.65.116.43
+        hostgroups      School-Direct-F, selby, customer-nodes, SCHOOLS, premier
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+
+
+
+define host {
+
+        use             standard
+        host_name       DFES2336_Hellifield CPS
+        alias           nycc-r-dfes2336-01
+        address         100.65.134.10
+        hostgroups      School-Direct-F, settle, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES3054_Hovingham C of E
+        alias           nycc-r-dfes3054-01
+        address         127.0.0.1
+        hostgroups      CEASED, School-Direct-N, malton, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES3120_Topcliffe CE VC PS
+        alias           nycc-r-dfes3120-01
+        address         100.65.130.23
+        hostgroups      School-Direct-N, thirsk, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+
+
+define host {
+
+        use             standard
+        host_name       DFES4059_Caedmon School
+        alias           nycc-r-dfes4059-01
+        address         100.65.108.22
+        hostgroups      School-Direct-F, whitby, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES4150_Filey School
+        alias           nycc-r-dfes4150-01
+        address         100.65.104.102
+        hostgroups      School-Direct-F, scarborough, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES4208_Aireville School
+        alias           nycc-r-dfes4208-01
+        address         100.65.100.48
+        hostgroups      School-Direct-F, skipton, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES4223_Nidderdale High School and Community College
+        alias           nycc-r-dfes4223-01
+        address         100.65.98.86
+        hostgroups      School-Direct-F, harrogate, pateley-bridge, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES1100 Scarborough PRS
+        alias           nycc-r-dfes1100-01
+        address         100.65.104.73
+        hostgroups      School-Direct-N, scarborough, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES1102 Hambleton and Richmondshire PRS
+        alias           nycc-r-dfes1102-01
+        address         100.65.110.37
+        hostgroups      School-Direct-C, northallerton, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+
+define host {
+
+	use		standard
+	host_name	DFES3065_Kirkby_Fleetham_CE_P_S
+	alias		nycc-r-dfes3065-01
+	address		100.65.110.66
+	hostgroups	School-Direct-N, northallerton, customer-nodes, SCHOOLS, standard
+	notification_options		d,r
+	max_check_attempts		2
+}
+
+define host {
+
+        use             standard
+        host_name       DFES3251 Kirk Fenton PS
+        alias           nycc-r-dfes3251-01
+        address         100.65.124.12
+        hostgroups      School-Direct-N, tadcaster, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
+
+
+
+ #       use             standard
+
+
+define host {
+
+        use             standard
+        host_name       DFES2363 Whitley and Eggborough PS
+        alias           nycc-r-dfes2363-01
+        address         100.65.114.10
+        hostgroups      School-Direct-N, snaith, customer-nodes, SCHOOLS, standard
+        notification_options            d,r
+        max_check_attempts              2
+}
+
