@@ -16,9 +16,9 @@ remote_directory '/etc/nagios3' do
 end
 
 
-execute 'remove contacts_nagios2.cfg' do
-	command 'rm /etc/nagios3/conf.d/contacts_nagios2.cfg'
-end
+#execute 'remove contacts_nagios2.cfg' do
+#	command 'rm /etc/nagios3/conf.d/contacts_nagios2.cfg'
+#end
 
 
 service 'nagios3' do
