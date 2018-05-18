@@ -1,0 +1,39 @@
+[DEFAULT]
+
+ignoreip = 127.0.0.1/8
+bantime  = 600
+maxretry = 20
+
+backend = auto
+
+destemail = support@nynet.co.uk
+sendername = Fail2Ban@radius1.bir.nynet.co.uk
+banaction = iptables-multiport
+
+mta = sendmail
+protocol = tcp
+
+chain = INPUT
+
+# The simplest action to take: ban only
+action_ = %(banaction)s[name=%(__name__)s, port="%(port)s", protocol="%(protocol)s", chain="%(chain)s"]
+
+# ban & send an e-mail with whois report to the destemail.
+action_mw = %(banaction)s[name=%(__name__)s, port="%(port)s", protocol="%(protocol)s", chain="%(chain)s"]
+              %(mta)s-whois[name=%(__name__)s, dest="%(destemail)s", protocol="%(protocol)s", chain="%(chain)s"]
+
+# ban & send an e-mail with whois report and relevant log lines
+# to the destemail.
+action_mwl = %(banaction)s[name=%(__name__)s, port="%(port)s", protocol="%(protocol)s", chain="%(chain)s"]
+               %(mta)s-whois-lines[name=%(__name__)s, dest="%(destemail)s", logpath=%(logpath)s, chain="%(chain)s"]
+
+
+action = %(action_mwl)s
+
+[ssh]
+
+enabled  = true
+port     = ssh
+filter   = sshd
+logpath = %(sshd_log)s
+maxretry = 20
